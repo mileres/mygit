@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="css/header-1.css" type="text/css" rel="stylesheet" />
+<link href="css/homeInfo-addMember.css" type="text/css" rel="stylesheet"/>
+<link href="css/footer.css" type="text/css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<div id="header">
+  <div id="header-left">
+    <img src="imgs/header-1.jpg" alt="logo"/>
+    <a href="index.html"><h2>首页</h2></a>
+  </div>
+  <div id="header-right">
+    
+    
+    <a href="" class="a1"><input type="text" placeholder="请输入搜索内容"/></a>
+    <a href="http://www.xinjin.gov.cn" target="_blank">官网</a>
+    <a href="http://baike.baidu.com/link?url=r0-6RUpvj9E760lseJX4fLDyp0Rg9Er_iW2LxOFSSfQwtQ28l6Ap2slUq0UfGcF-h1Dx1mZ-p6xiMtrQk4_iLK" target="_blank">简介</a>
+    <!--<a href="javascript:;">个性化</a>-->
+    <a href="javascript:;"><img src="imgs/people.PNG" alt="用户/管理员"/><span>张舒展</span></a>
+  </div>
+</div>
+<div id="center">
+    <div id="cen-top">
+      <div>
+        <h3>社会服务 &nbsp;&gt;&nbsp;家政服务 &nbsp;&gt;&nbsp;添加家庭成员</h3>
+         <!--<img src="imgs/ss-1.jpg" alt="tu"/>-->
+       </div>
+    </div>
+    <form id="register" action="<%=path %>/familyServlet?type=add" method="post">
+    	<span>姓名:</span><input type="text" name="familyMemberName">
+    	<br><br>
+    	<span>与户主关系:</span><input type="text" name="relation">
+    	<br><br>
+    	<span>年龄:</span><input type="text" name="age">
+    	<br><br>
+        <span>民族:</span><input type="text" name="nation">
+    	<br><br>
+    	<span>性别:</span><input class="choose" type="radio" name="sex" value="1"><span class="choose2">男&nbsp;</span>
+    		 <input class="choose" type="radio" name="sex" value="0"><span class="choose2">女&nbsp;</span>
+    	<br><br>
+        <span>婚姻状态:</span><input class="choose" type="radio" name="marriage" value="0"><span class="choose2">未婚</span>
+    		 	 <input class="choose" type="radio" name="marriage" value="1"><span class="choose2">已婚</span>
+    	<br><br>
+        
+    	<span>教育背景:</span><select name="edubg">
+    				<option>博士后</option>
+    				<option>博士</option>
+    				<option>研究生</option>
+    				<option>本科</option>
+    				<option>高中</option>
+    				<option>初中</option>
+    				<option>小学</option>
+    				<option>其他</option>
+    			</select>
+         <br/><br/>
+    	<span>政治面貌:</span><select name="polsta">
+    				<option>党员&nbsp;&nbsp;&nbsp;</option>
+    				<option>团员</option>
+    				<option>群众</option>
+    				<option>其他</option>
+    			</select>
+    	<br><br>
+    	
+    	
+    	<span>手机电话:</span><input class="longer" type="text" name="phone"/>
+    	<br><br>
+    	<span>电子邮箱:</span><input class="longer" type="text" name="email"/>
+    	<br><br>
+    	<span>户籍信息:</span><input class="longer" type="text" name="registry" />
+    	<br><br>
+    	<span>计生信息:</span><input class="longer" type="text" name="birrthControl"/>
+    	<br><br>
+    	<span>社保信息:</span><input class="longer" type="text" name="socialSecurity"/>
+    	<br><br>
+    	<span>房产信息:</span><input class="longer" type="text" name="property"/>
+    	<br><br>
+    	
+    	<input class="btn" type="submit" value="提交">
+    	<input class="btn" type="button" value="返回" onclick="window.location.href='memberMessage.jsp'">
+   	
+    </form>
+</div>
+
+<div id="footer">
+    <div class="footer-link">
+      <a href="/about/us" target="_blank" title="关于我们">关于我们</a>
+      <a href="/about/cooperate" target="_blank" title="企业合作">企业合作</a>
+      <a href="/about/job" target="_blank" title="人才招聘">人才招聘</a>
+      <a href="/about/recruit" target="_blank" title="讲师招募">讲师招募</a>
+      <a href="/about/contact" target="_blank" title="联系我们">联系我们</a>
+      <a href="/user/feedback" target="_blank" title="意见反馈">意见反馈</a>
+      <a href="/about/friendly" target="_blank">友情链接</a>
+    </div>
+    <hr/>
+    <div class="footer-copyright">
+     <p>©&nbsp2016&nbspmileres.com&nbsp&nbsp京ICP备XXXXXXXX号</p>
+    </div>
+</div>        
+</body>
+</html>

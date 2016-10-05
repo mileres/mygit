@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#center{ width:1000px; height:600px;margin:20px auto;}
+#center #cen-top{ width:1000px; height:80px; background:#fff; padding-top:5px;}
+#center #cen-top div{ width:1000px; height:80px;margin:25px auto auto 20px; font-size:18px; position:relative;}
+#center #cen-top p{ font-size:18px; margin: 0px auto auto 20px;}
+
+#detail div{width:1000px; height:600px; background:#fff; margin-top:20px;}
+#detail div span{display:inline-block; width:120px; height:40px; text-align:right;}

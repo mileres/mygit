@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+#center{ width:1000px; height:600px;margin:20px auto;}
+#center #cen-top{ width:1000px; height:80px; background:#fff; padding-top:5px;}
+#center #cen-top div{ width:1000px; height:80px;margin:25px auto auto 20px; font-size:18px; position:relative;}
+#center #cen-top p{ font-size:18px; margin: 0px auto auto 20px;}
+
+#cen-homeInfo-search{ width:1000px; height:600px; background:#fff; margin-top:20px; padding-top:5px;}
+#cen-homeInfo-search #hi-head{width: 960px; height:50px; margin:0px auto 0 auto; border:1px solid #d5d5d5; background:url(../imgs/cen-right-PS-application.PNG) repeat-x bottom;} 
+#hi-head .text{width:200px; height:35px; background:url(../imgs/cen-left-bg-border.png) repeat-x bottom; margin-left:620px; font-size:16px;}
+#hi-head .btn{width:55px; height:30px; text-align:center ; background:#b40004; color:#fff; margin-right:5px;}
+
+#cen-homeInfo-search #tab{width:960px; height:500px; margin:-1px auto;text-align:center;}
+#cen-homeInfo-search #tab th,#cen-homeInfo-search #tab td{ border:1px solid #dddddd;}
+#cen-homeInfo-search #end input{width:50px; height:30px; text-align:center ; background:#b40004; color:#fff; margin-right:30px; margin-top:20px;}
+
+
+
+

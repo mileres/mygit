@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+#center{ width:1000px; height:600px;margin:20px auto;}
+#center #cen-top{ width:1000px; height:80px; background:#fff; padding-top:5px;}
+#center #cen-top div{ width:1000px; height:80px;margin:25px auto auto 20px; font-size:18px; position:relative;}
+#center #cen-top p{ font-size:18px; margin: 0px auto auto 20px;}
+#cen-top div img{ width:50px; height:45px; position:absolute; top:-12px; right:25px;}
+
+#cen-right{width:700px; height:470px; background:#fff; position:absolute; top:15px; left:320px;}
+#cen-right  span{ display:inline-block; line-height:50px; font-size:18px; margin-bottom:10px;}
+#cen-right input{ line-height:50px; width:300px; font-size:18px; background:url(../imgs/cen-left-bg-border.png) repeat-x bottom; text-align:center;}
+
+#btn { width:50px; height:30px; line-height:30px; font-size:18px; color:#fff; text-align:center; border-radius:3px; background:#b40004; margin-left:250px;}
