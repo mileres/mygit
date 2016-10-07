@@ -1,0 +1,6 @@
+body{margin: 0;}
+#contain{width: 180px; height: 180px; position: relative; border: 1px solid #ccc; margin-left: 100px; margin-top: 50px;}
+#div1{width: 100px; height: 100px; background: yellow; opacity: 0.5; filter: alpha(opacity:50); display: none; position: absolute;}
+
+#div2{width:400px; height: 400px; position: absolute;left: 190px; top: 0px; border: 1px solid red; display: none; overflow: hidden;}
+#big{position: absolute; top: 0; left: 0;}
