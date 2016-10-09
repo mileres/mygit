@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>canvas { width: 100%; height: 100% }</style>
+    <script src="js/three.js"></script>
+</head>
+<body>
+    <script>
+       var scene = new THREE.Scene();//定义场景
+       var camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000);//定义相机
+       var renderer = new THREE.WebGLRenderer();//渲染
+       
+       renderer.setSize(window.innerWidth,window.innerHeight);//设置渲染的大小
+       renderer.setClearColor("#ffffff");
+       document.body.appendChild(renderer.domElement);//把渲染出的东西添加到body子级
+       
+       var geometry = new THREE.CubeGeometry(1,1,1);//定义实体物体
+       var material = new THREE.MeshBasicMaterial({color:0x00ff00});//定义材质属性
+       var cube = new THREE.Mesh(geometry,material);//给实体添加属性
+       
+       scene.add(cube);//把实体添加到场景
+       
+       camera.position.z=5;//设置相机深度
+       function reder(){
+       	    requestAnimationFrame(reder)
+       	    cube.rotation.x += 0.1;
+       	    cube.rotation.y += 0.1;
+       	    renderer.render(scene, camera);//  用相机把场景渲染到网页中
+       	    
+       }
+       reder();
+     
+ 
+//      var scene = new THREE.Scene();//场景
+//		
+//      var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);//相机
+//		
+//      var renderer = new THREE.WebGLRenderer();//渲染
+//		
+//      renderer.setSize(window.innerWidth, window.innerHeight);//设置渲染(画布)的大小
+//		
+//      document.body.appendChild(renderer.domElement);//把渲染在domElement上的’画‘面添加到body子级来在页面上显示。
+//      var geometry = new THREE.CubeGeometry(1,1,1); //定义实物体
+//      var material = new THREE.MeshBasicMaterial({color: 0x00ff00});//定义（材质）属性
+//      var cube = new THREE.Mesh(geometry, material);  //把属性添加到物体上（结合）
+//      scene.add(cube);//把物体添加到场景中
+//      camera.position.z = 5; //设置相机的深度位置
+//      function render() {    //循环
+//          requestAnimationFrame(render); //调用一次参数所代表的函数
+//          cube.rotation.x += 0.1;//rotation：旋转
+//          cube.rotation.y += 0.1;
+//          renderer.render(scene, camera);//用相机把场景渲染到网页中。（结合）
+//      }
+//      render();
+    </script>
+</body>
+</html>
